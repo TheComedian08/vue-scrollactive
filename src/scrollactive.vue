@@ -309,7 +309,7 @@ export default {
       }
 
       if (this.modifyUrl) {
-        pushHashToUrl(getSectionIdFromElement(menuItem));
+        pushHashToUrl(getSectionIdFromElement(this.$route.path+menuItem));
       }
     },
 
